@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             /*    遅延処理
              1秒後に実行させたい！みたいな時に使えるコード
              DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-             1秒後に実行したい処理をここに書く} */
+             1秒後に実行したい処理をここに書く  } */
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1 * Double(i)) {
                 //  "shoryuken.imageにattak()"の中に1~20を代入していって画像を変えていく
                 self.shoryuken.image = UIImage(named: "attak\(i)")
